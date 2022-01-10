@@ -38,6 +38,8 @@ void MaxElement_2_array (int n, int a[]) {
         if (a[i] == max)
         {
             count++;
+        } else {
+            break;
         }
     }
     if (count == n - 1)
