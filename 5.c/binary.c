@@ -17,21 +17,38 @@
 #include <stdio.h>
 #include <math.h>
 
-long NhiPhan (int n) {
-    long res = 0;
+void NhiPhan (int n) {
+    int a[32];
+    unsigned long long int res = 0;
     int p = 0;
     while (n > 0) {
-        res = res + (n % 2) * pow(10, p);
-        ++p;
+        a[p] = n % 2;
         n /= 2;
+        p++;
+
     }
-    return res;
+    for (int j= p - 1; j >= 0; j--) {
+        printf ("%d", a[j]);
+    }
+
 }
 
 int main() {
     int n, p = 0;
-    long res = 0;
+    unsigned long long int res = 0;
     scanf ("%d", &n);
-    printf ("%d", NhiPhan(n));
+    NhiPhan(n);
     return 0;
 }
+
+// unsigned long long int res = 0;
+// int p = 0;
+// while (n > 0)
+// {
+//     int t = (n % 2);
+//     unsigned long long int x = pow(10, p);
+//     res += t * x;
+//     n /= 2;
+//     ++p;
+// }
+// return res;
