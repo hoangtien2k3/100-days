@@ -5,6 +5,7 @@
 
 void MaxNumberInArray(int n, int a[])
 {
+    // Độ dài mảng(số phần tử) = [Kích thước mảng] / [Kích thước kiểu mảng]
     // int length = sizeof(a) / sizeof(a[0]);
     int max = a[0];
     for (int i = 0; i < n; i++)
@@ -20,7 +21,7 @@ void MaxNumberInArray(int n, int a[])
 // cách 1:Tìm ra phân tử lớn thứ 2 của mảng
 int MaxElement_2_array (int n, int a[]) {
     if (n <= 0) {
-        printf("NOT FOUND");
+        printf("\nNOT FOUND");
         return 0;
     } else {
         for (int i = 0; i < n - 1; i++)
