@@ -10,12 +10,24 @@
 #include<stdio.h>
 
 int Index (int n, int a[]) {
-
+    int max = a[0];
+    int m;
+    for (int i=0; i< n; i++) {
+        if (a[i] >= max) {
+            max = a[i];
+            m = i;
+        }
+    }
+    printf ("%d", m);
 }
 
 int main() {
     int n, a[1000];
-
-
+    int max = a[0], m;
+    scanf ("%d", &n);
+    for (int i=0; i<n; i++) {
+        scanf ("%d", &a[i]);
+    }
+    Index(n, a);
     return 0;
 }
