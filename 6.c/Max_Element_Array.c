@@ -18,38 +18,44 @@ void MaxNumberInArray(int n, int a[])
 }
 
 // Tìm ra phân tử lớn thứ 2 của mảng
-void MaxElement_2_array (int n, int a[]) {
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = i + 1; j < n; j++)
+int MaxElement_2_array (int n, int a[]) {
+    if (n <= 0) {
+        printf("NOT FOUND");
+        return 0;
+    } else {
+        for (int i = 0; i < n - 1; i++)
         {
-            if (a[i] > a[j])
+            for (int j = i + 1; j < n; j++)
             {
-                int temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
+                if (a[i] > a[j])
+                {   
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        } // sắp xếp mảng tăng dần
+        int max = a[n - 1]; // gia tri lao nhat
+        int count = 0;
+        for (int i = 0; i < n - 1; i++)
+        {
+            if (a[i] == max)
+            {
+                count++;
+            } else {
+                break;
             }
         }
-    } // sắp xếp mảng tăng dần
-    int max = a[n - 1]; // gia tri lao nhat
-    int count = 0;
-    for (int i = 0; i < n - 1; i++)
-    {
-        if (a[i] == max)
+        if (count == n - 1)
         {
-            count++;
-        } else {
-            break;
+            printf("\nNOT FOUND");
+        }
+        else
+        {
+            printf("\n%d", a[n - 2 - count]);
         }
     }
-    if (count == n - 1)
-    {
-        printf("\nNOT FOUND");
-    }
-    else
-    {
-        printf("\n%d", a[n - 2 - count]);
-    }
+    return 0;
 }
 
 
