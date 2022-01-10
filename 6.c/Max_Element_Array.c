@@ -19,7 +19,7 @@ void MaxNumberInArray(int n, int a[])
 
 // Tìm ra phân tử lớn thứ 2 của mảng
 void MaxElement_2_array (int n, int a[]) {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
