@@ -26,7 +26,7 @@ int find_x(int a[], int x)
     return 0;
 }
 
-int main()
+int main(void)
 {
     int a[10], x;
     for (int i = 0; i < 10; i++)
