@@ -1,9 +1,9 @@
 // Số nguyên tố trong mảng 1 chiều
 
 /*
-    Cho mảng AA gồm nn số nguyên, hãy viết chương trình tìm và in ra các số nguyên tố có trong mảng
+    Cho mảng A gồm n số nguyên, hãy viết chương trình tìm và in ra các số nguyên tố có trong mảng
     + Dòng đầu tiên là số nguyên dương n
-    + Dòng tiếp theo là nn số nguyên tương ứng là các phần tử của mảng A
+    + Dòng tiếp theo là n số nguyên tương ứng là các phần tử của mảng A
 
     Xuất ra các số nguyên tố có trong mảng, yêu cầu:
         + Theo thứ tự tăng dần
