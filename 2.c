@@ -17,17 +17,16 @@ int daoNguoc(int n)
 {
     int du, res = 0;
     while (n != 0)
-    {                        // n là phân tử đầu tiên của mảng a[0] , n = 123456
-        du = n % 10;         // du = 123456 % 10 = 6
-        res = res * 10 + du; // res = 0 * 10 + 6 = 6
-        n = n / 10;          // loại bỏ số cuối, n = 123456 / 10 = 12345
+    {                        
+        du = n % 10;       
+        res = res * 10 + (du); 
+        n = n / 10;          
     }
-    return res; // số đảo ngược : res = 654321
+    return res; 
 }
 bool Check(int n)
 {
     return (daoNguoc(n) == n) ? true : false;
-    // Syntax: toán tử 3 ngôi oke , hoặc có thể dùng if_else hoặc hay hơn nữa là: return (daoNguoc(n) == n) trình duyệt cùng hiểu
 }
 
 int main()
@@ -42,7 +41,7 @@ int main()
     }
     for (int i = 1; i <= n; i++)
     {
-        if (Check(arr[i]))
+        if (Check(n)) // Check(n = arr[i]);
         {
             printf("%d ", arr[i]);
         }
