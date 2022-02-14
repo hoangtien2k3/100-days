@@ -29,6 +29,4 @@ int solution(arr_integer inputArray)
     return max;
 }
 
-int main() {
-    int arr[100]
-}
+
