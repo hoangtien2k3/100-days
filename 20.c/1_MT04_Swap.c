@@ -1,9 +1,9 @@
 
 /*
-    Nguồn: Luyện code _ MT04- Sắp xếp ma trận 1
+    Nguồn: Luyện code _ MT04- Sắp xếp
 
-    Viết chương trình nhập ma trận các số nguyên AA có mm dòng và nn cột từ bàn phím.
-    Hãy sắp xếp hàng thứ ii của ma trận tăng dần và in ra ma trận sau khi thực hiện sắp xếp xong.
+    Viết chương trình nhập ma trận các số nguyên A có m dòng và n cột từ bàn phím.
+    Hãy sắp xếp - hàng thứ i - của ma trận tăng dần và in ra ma trận sau khi thực hiện sắp xếp xong.
 
     Dòng đầu tiên là 3 số nguyên dương m, n và i.
     Dòng thứ 2 là m * n số nguyên tương ứng là các phần tử của mảng AA
