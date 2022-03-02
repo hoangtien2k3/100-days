@@ -32,11 +32,12 @@ int main()
     
     cout << "Nhap a: ";
     cin >> (*ptr).a;
-    cout << "Nhap inch: ";
+    cout << "Nhap b: ";
     cin >> (*ptr).b;
  
-    cout << "Hien thi thong tin." << endl;
-    cout << "Khoang cach = " << (*ptr).a << " a " << (*ptr).b << " inches";
+    cout << "Hien thi thong tin : " << endl;
+    cout << "a = " << (*ptr).a << endl << "b = " << (*ptr).b;
 
     return 0;
 }
+
