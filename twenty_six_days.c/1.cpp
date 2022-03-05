@@ -5,7 +5,7 @@
 
 */
 
-// sử dụng tham trị
+// sử dụng tham chiếu
 #include <iostream>
 
 using namespace std;
@@ -28,7 +28,7 @@ int main() {
 
 
 
-// sự dụng tham chiếu
+// sự dụng tham trị
 #include <iostream>
 
 using namespace std;
