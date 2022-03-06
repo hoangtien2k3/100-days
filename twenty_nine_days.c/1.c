@@ -14,7 +14,7 @@ void Nhap_a_b (int a, int b) {
         if (b < 0) {
             printf ("Nhap lai gia tri b: ");
         }
-    } while (b < 0);
+    } while (b < 0); 
 }
 
 int UCLN (int a, int b) {
