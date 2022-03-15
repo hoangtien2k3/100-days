@@ -27,5 +27,8 @@ struct SV {
 void NhapSV (SV *sv) {
     printf ("Nhap MaSV: ");
     scanf ("%s", sv->masv);
+}
+
+int main() {    
 
 }
