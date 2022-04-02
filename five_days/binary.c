@@ -20,35 +20,34 @@
 void NhiPhan (int n) {
     int a[32];
     unsigned long long int res = 0;
-    int p = 0;
-    while (n > 0) {
-        a[p] = n % 2;
+    int i = 0;
+    while (n != 0) {
+        a[i] = n % 2;
         n /= 2;
-        p++;
-
+        i++;
     }
-    for (int j= p - 1; j >= 0; j--) {
+    for (int j = i - 1; j >= 0; j--) {
         printf ("%d", a[j]);
     }
 
 }
 
+// int Binary(int n) {
+//     int binary = 0;
+//     for (int i=0; n != 0; i++) {
+//         binary += (n%2)*pow(10, i); 
+//         n /= 2;
+//     }
+//     return binary;
+// }
+
 int main() {
-    int n, p = 0;
+    int n;
     unsigned long long int res = 0;
+    printf ("Input decimal n = ");
     scanf ("%d", &n);
     NhiPhan(n);
+    // printf ("%d", Binary(n));
     return 0;
 }
 
-// unsigned long long int res = 0;
-// int p = 0;
-// while (n > 0)
-// {
-//     int t = (n % 2);
-//     unsigned long long int x = pow(10, p);
-//     res += t * x;
-//     n /= 2;
-//     ++p;
-// }
-// return res;
